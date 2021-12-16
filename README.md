@@ -13,13 +13,29 @@ This archive contains basic tweet data (tweet ID, timestamp, text, etc.) for all
 
 # Project Steps Overview
 - Step 1: Gathering data
+  Additional data from the Twitter API
+  Gather each tweet's retweet count and favorite ("like") count at the minimum and any additional data you find interesting. Using the tweet IDs in the WeRateDogs Twitter        archive, query the Twitter API for each tweet's JSON data using Python's Tweepy library and store each tweet's entire set of JSON data in a file called tweet_json.txt file.
+
+  Each tweet's JSON data should be written to its own line. Then read this .txt file line by line into a pandas DataFrame with (at minimum) tweet ID, retweet count, and favorite     count. Note: do not include your Twitter API keys, secrets, and tokens in your project submission.)
 
 - Step 2: Assessing data
+    I need to use two types of assessment:
+    Visual assessment: each piece of gathered data is displayed in the Jupyter Notebook for visual assessment purposes. Once displayed, data can additionally be assessed in an       external application (e.g. Excel).
+    Programmatic assessment: pandas' functions and/or methods are used to assess the data.
 
 - Step 3: Cleaning data
+  I have made of original data before cleaning
+  I have used The Define - Code - Test framework
+  I have documented The Define - Code - Test framework
+  I have documented each issues in few sentences 
+  I have successfully cleaned all issues
 
 - Step 4: Storing data
+  store the cleaned master DataFrame in a CSV file with the main one named twitter_archive_master.csv. If additional files exist because multiple tables are required for           tidiness, name these files appropriately. Additionally, you may store the cleaned data in a SQLite database 
 
 - Step 5: Analyzing, and visualizing data
+   I produce three (3) insights and one (1) visualization.
+   I clearly document the piece of assessed and cleaned (if necessary) data used to make each analysis and visualization.
 
 - Step 6: Reporting
+  act_report.pdf that communicates all the insights and displays the visualization(s) produced from your wrangled data. This is to be framed as an external document, like a   blog post or magazine article.
